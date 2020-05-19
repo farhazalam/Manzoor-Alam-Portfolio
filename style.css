@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+
+nav {
+    overflow: auto;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    background-image: none;
+}
+
+.active {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+
+/* Background Image */
+
+.bg {
+    background-image: url("images/cover.jpg");
+    height: 100vh;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.b {
+    height: 30vh;
+    overflow: hidden;
+}
+
+.b .container .topnav a {
+    font-size: 17px;
+    padding-right: 80px;
+}
+
+.typewriter h1,
+h2,
+h3,
+h4 {
+    color: whitesmoke;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 2.5s steps(30, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+.typewriter h1 {
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+.typewriter h2 {
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+
+.typewriter h3 {
+    font-size: 0.5;
+    font-weight: 300;
+}
+
+.typewriter h4 {
+    font-size: 0.1;
+    margin-top: -5px;
+}
+
+
+/* Quick Insights Header */
+
+.section-header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 2vh;
+    padding-top: 3vh;
+}
+
+.section-header .container {
+    display: grid;
+    justify-items: center;
+    color: #5c5c5c;
+}
+
+.section-header .container:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.section-header .container i {
+    font-size: 7vw;
+}
+
+
+/* About */
+
+.section-about {
+    border: 3.5px solid rgba(128, 128, 128, 0.3);
+    margin: 5vh 2vw;
+    padding: 1vh 1vw;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    text-align: center;
+}
+
+.divider {
+    border-left: 3.5px solid rgba(128, 128, 128, 0.3);
+    margin-left: 40%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+.welcome-image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.section-about .content .p-head {
+    font-weight: 900;
+}
+
+.section-about .content .p-title {
+    font-family: Niconne;
+    font-size: 3vw;
+    color: darkcyan;
+}
+
+.section-about .content .p-subtitle {
+    font-weight: 600;
+}
+
+
+/* Products */
+
+.section-products {
+    border: 3.5px solid rgba(128, 128, 128, 0.3);
+    margin: 5vh 2vw;
+    padding: 1vh 1vw;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-auto-rows: 30vh;
+    grid-gap: 0.5%;
+}
+
+.section-products img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-products .product-image {
+    object-fit: cover;
+}
+
+.section-products .img2 {
+    grid-row: auto / span 2;
+}
+
+.section-products .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 189, 189);
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.see-more-button {
+    margin-top: 2%;
+    width: 40%;
+    height: 20%;
+    background-color: #1f5780;
+    line-height: 150%;
+    text-align: center;
+    color: white;
+    transition: 0.3s ease-out;
+}
+
+.see-more-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.see-more-button p {
+    font-size: 60%;
+    font-weight: 600;
+}
+
+.see-more-button:hover {
+    background-color: white;
+    border: 2px solid #1f5780;
+    color: #1f5780;
+}
+
+.section-products .content .frame {
+    height: 25%;
+    width: 35%;
+}
+
+.section-products .content .glass {
+    height: 30%;
+    width: 20%;
+}
+
+
+/* contact */
+
+.section-contact {
+    margin: 5vh 2vw;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-auto-rows: 60vh;
+    grid-gap: 0.5%;
+}
+
+.section-contact iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.section-contact .content {
+    background-color: #f0f0f0;
+}
+
+.section-contact .content .c1 {
+    color: #1f5780;
+    font-size: 3vw;
+}
+
+.section-contact .content .c2 {
+    font-size: 1.5vw;
+}
+
+
+/* Footer */
+
+footer {
+    height: 4vh;
+    background-color: rgba(191, 189, 189, 0.5);
+}
+
+
+/* Sticky Button */
+
+.button {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.button1m,
+.button2m {
+    display: none;
+}
+
+.button1 {
+    background-color: #1f5780;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 600;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.button2 {
+    margin-top: 8px;
+    background-color: #25D366;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+    font-weight: 600;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 10px black, 2px 2px 25px black, 2px 2px 40px #1f5780;
+    }
+    to {
+        text-shadow: 2px 2px 20px black, 2px 2px 40px white, 2px 2px 60px blue;
+    }
+}
+
+
+/* PRODUCTS PAGES */
+
+.heading {
+    margin: 3vh 3vw;
+    color: #1f5780;
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.brands img {
+    width: 45%;
+    height: 100px;
+    margin-left: 25%;
+}
+
+.brands .brand-container {
+    border: 1px solid rgb(191, 189, 189);
+}
+
+.image {
+    border: 1px solid rgb(191, 189, 189);
+}
+
+.brands {
+    margin: 0 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1%;
+    grid-row-gap: 5vh;
+}
+
+.spacing {
+    height: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+    .active {
+        border-bottom: 0px solid white;
+    }
+    .topnav a {
+        display: none;
+    }
+    /* Background Image */
+    .bg {
+        height: 25vh;
+    }
+    .typewriter h1 {
+        font-size: 6vw;
+        font-weight: 600;
+    }
+    .typewriter h2 {
+        font-size: 3vw;
+        font-weight: 400;
+    }
+    .typewriter h3 {
+        display: none;
+    }
+    /* Quick Insights Header */
+    .section-header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* About */
+    .section-about {
+        grid-template-columns: 1fr;
+    }
+    .divider {
+        display: none;
+    }
+    .section-about .content .p-title {
+        font-family: Niconne;
+        font-size: 7vw;
+        color: darkcyan;
+    }
+    .section-about .content .p-subtitle {
+        font-weight: 600;
+        font-size: smaller;
+    }
+    /* Product */
+    .section-products {
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-products .content .title {
+        font-size: 60%;
+    }
+    .see-more-button p {
+        font-size: 45%;
+    }
+    .section-products .img2 {
+        display: none;
+    }
+    /* Contact */
+    .section-contact {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+    }
+    .section-contact .content .c2 {
+        font-size: 3vw;
+    }
+    .section-contact .content .c1 {
+        color: #1f5780;
+        font-size: 6vw;
+    }
+    .section-contact .content p {
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    /* Sticky Button */
+    .button1,
+    .button2 {
+        display: none;
+    }
+    .button1m {
+        display: block;
+        height: 6vh;
+        width: 6vh;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    .button2m {
+        display: block;
+        margin-top: 4px;
+        height: 8vh;
+        width: 8vh;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    /* PRODUCTS PAGE */
+    .brands {
+        grid-template-columns: 1fr;
+    }
+    .heading {
+        text-align: center;
+        font-size: 4.5vw;
+    }
+    .spacing {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .brands {
+        grid-template-columns: 1fr 1fr;
+    }
+    .heading {
+        text-align: center;
+        font-size: 4.5vw;
+    }
+    .spacing {
+        height: 100px;
+    }
+}
