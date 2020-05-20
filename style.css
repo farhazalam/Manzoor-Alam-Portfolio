@@ -426,7 +426,6 @@ footer {
     /* About */
     .section-about {
         grid-template-columns: 1fr;
-        grid-auto-rows: 25vh;
     }
     .divider {
         display: none;
